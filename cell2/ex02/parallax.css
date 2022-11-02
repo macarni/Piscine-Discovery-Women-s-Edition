@@ -1,0 +1,50 @@
+body, html {
+    height: 100%;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.parallax1, .parallax2 {
+    position: relative;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.parallax1 {
+
+    background-image: url("pizza.jpeg");
+    min-height: 100%;
+}
+
+.parallax2 {
+
+    background-image: url("pasta.jpeg");
+    min-height: 100%;
+
+}
+
+span {
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    position: absolute;
+}
+
+.texto {
+
+    background-color: black;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}

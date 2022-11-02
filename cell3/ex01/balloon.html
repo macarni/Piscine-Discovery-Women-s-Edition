@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Globo</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *  {
+                margin: 0;
+            }
+
+            body, html {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            div  {
+
+                background-color: red;
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+            }
+
+        </style>
+        <script>
+
+            function cambioTamanio(){
+
+                var h = document.getElementById("globo").offsetWidth;
+                var w = document.getElementById("globo").offsetWidth;
+
+                if (h === 420 ) {
+
+                    h = 200 + "px";
+                    w = 200 + "px";
+                }
+
+                else {
+
+                    h = (document.getElementById("globo").offsetWidth + 10) + "px";
+                    w = (document.getElementById("globo").offsetWidth + 10) + "px";
+
+                }
+
+                document.getElementById("globo").style.width = h;
+                document.getElementById("globo").style.height  = w;
+
+            }
+
+            function cambioColor(){
+                /* debugger */
+                var color = document.getElementById("globo").style.backgroundColor;
+
+                if (color === "red" || color === ""){
+                    color = "green";
+                }
+
+                else if (color === "green"){
+                    color = "blue";
+                }
+
+                else {
+                    color = "red";
+                }
+
+                document.getElementById("globo").style.backgroundColor =  color;
+            }
+
+            function reduccionTamanio(){
+                /* debugger */
+                var h = (document.getElementById("globo").offsetWidth -5 );
+                var w = (document.getElementById("globo").offsetWidth -5 );
+
+                if (h < 200 ) {
+
+                    h = 200;
+                    w = 200;
+                }
+
+                document.getElementById("globo").style.width = h + "px";
+                document.getElementById("globo").style.height  = w + "px";
+
+            }
+
+            function cambioColorInverso(){
+
+                var color = document.getElementById("globo").style.backgroundColor;
+
+                if (color === "red" || color === ""){
+                    color = "blue";
+                }
+
+                else if (color === "blue"){
+                    color = "green";
+                }
+
+                else {
+                    color = "red";
+                }
+
+                document.getElementById("globo").style.backgroundColor =  color;
+            }
+
+        </script>
+    </head>
+  <body>
+    <div id="globo" onclick="cambioColor(); cambioTamanio()" onmouseout="reduccionTamanio(); cambioColorInverso()"></div>
+  </body>
+</html>

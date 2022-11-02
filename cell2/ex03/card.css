@@ -1,0 +1,35 @@
+body, html {
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.foto-perfil {
+  height: 150px;
+}
+
+td img {
+  height: 25px;
+}
+
+table {
+  padding: 0;
+  margin: auto;
+  text-align: center;
+  box-shadow: 5px 4px 11px 4px rgba(0,0,0,0.5);
+}
+
+.contacto {
+  background-color: black;
+  height: 20px;
+  padding: 10px 0 10px 0;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

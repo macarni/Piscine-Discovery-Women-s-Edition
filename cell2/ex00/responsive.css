@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    height: 100%;
+
+}
+.una {
+    background-color: lightgreen;
+}
+
+.dos {
+    background-color: lightpink;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+th {
+    text-align: left;
+}
